@@ -19,6 +19,7 @@
             미지근혀 > 박동진  김민근  송현섭  윤석민
         </h6>
     </div>
+</body>
     <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -40,24 +41,24 @@
             return (
                 <div class="submit-box">
                     <h2>Login</h2>
-                    <form id="login-form" onSubmit={onSubmitHandler}>
-                    <div class="user-box">
-                        <input type="text" required=""
-                        value={Id} onChange={onIdHandler}/>
-                        <label>ID</label>
-                    </div>
-                    <div class="user-box">
-                        <input type="password" required=""
-                        value={Password} onChange={onPasswordHandler}/>
-                        <label>Password</label>
-                    </div>
-                    <div>
-                        <input class="submit-btn" type="submit" value="submit"/>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                    </div>
+                    <form id="sign-up-form" onSubmit={onSubmitHandler}>
+                        <div class="user-box">
+                            <input type="text" required maxlength="15" minlength="6"
+                            value={Id} onChange={onIdHandler}/>
+                            <label>ID</label>
+                        </div>
+                        <div class="user-box">
+                            <input type="text" required maxlength="15" minlength="6"
+                            value={Password} onChange={onPasswordHandler}/>
+                            <label>Password</label>
+                        </div>
+                        <div>
+                            <input class="submit-btn" type="submit" value="submit"/>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                        </div>
                     </form>
                 </div>
             );
@@ -65,5 +66,4 @@
         const login = document.getElementById("login");
         ReactDOM.render(<Login />, login);
     </script>
-</body>
 </html>
