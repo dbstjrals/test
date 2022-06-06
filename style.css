@@ -468,8 +468,15 @@
     width: 100%;
     vertical-align: middle;
 }
+.lcontainer .all-recommend .contents {   
+    width: 100%;
+    vertical-align: middle;
+}
 
-.lcontainer .mrecommend .contents img{
+.lcontainer .recommend .contents img{
+    width: 18%;
+}
+.lcontainer .all-recommend .contents img{
     width: 18%;
 }
 
@@ -482,10 +489,12 @@
     cursor: pointer;
 }
 
-.lcontainer .all-recommend .like_button2{
+
+
+.lcontainer .all-recommend .like_button{
     border : none;
     position: relative;
-    width: 30%;
+    width: 18%;
     left: 0;
     background-color: transparent;
     cursor: pointer;
